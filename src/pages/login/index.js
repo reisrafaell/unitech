@@ -23,6 +23,8 @@ export const Login = () => {
       <InputComponent   label="Sua Senha"/>
       <ButtonComponent label={"Acessar"} backgroundColor={"#0F6FC1"} marginT={"10px 0 0 0"} onPress={handleSubmit}/>
       <LinkComponent link={"Ainda não tem cadastro ?"} onPress={()=> navigation.navigate("Cadastro")}></LinkComponent>
+      <LinkComponent link={"Voltar"} onPress={()=> navigation.navigate("InitialPage")}></LinkComponent>
+
     </S.Container>
   );
 };

@@ -16,5 +16,4 @@ export const Container = styled.View`
   flex-direction: row;
   height: 30px;  
   width: 80%;
-  margin-bottom:20px ;
 `;

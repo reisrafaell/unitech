@@ -6,7 +6,6 @@ import AuthProvider from "../context/auth";
 import { Home, Login } from "../pages";
 import { InitialPage } from "../pages/initial";
 import { Cadastro } from "../pages/Cadastro";
-import { HeaderBackButton } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,15 +16,9 @@ const Route = () => {
         <Stack.Navigator>
         <Stack.Screen
             name="Login"
-            options={({ navigation }) => ({
-              headerShown: true,
-              headerLeft: (props) => (
-                <HeaderBackButton
-                  {...props}
-                  onPress={() => navigation.goBack()}
-                />
-              ),
-            })}
+            options={{
+              headerShown: false,
+            }}
             component={Login}
           />
         <Stack.Screen
